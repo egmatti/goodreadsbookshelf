@@ -7,6 +7,10 @@
   padding: 0;
 }
 
+html {
+  height: 100%;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
@@ -35,6 +39,10 @@ header {
     list-style-type: none;
     padding: 0px 5px;
   }
+}
+
+#logos:hover {
+  transform: scale(1.025);
 }
 
 #logo {
@@ -70,6 +78,11 @@ input {
       font-size: 1.35rem;
       font-weight: normal;
       text-decoration: none;
+      padding-bottom: 4px;
+    }
+
+    a:hover {
+      border-bottom: 2px solid white;
     }
   }
 }
@@ -92,7 +105,12 @@ aside {
       color: black;
       font-size: 1.1rem;
       font-weight: lighter;
+      line-height: 24px;
       text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   }
 }
@@ -135,6 +153,7 @@ aside {
   position: absolute;
   top: 0%;
   width: 100%;
+  z-index: 30;
 }
 
 .right-board {
@@ -148,7 +167,7 @@ aside {
   top: 0%;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 93%);
   width: 60px;
-  z-index: -5;
+  z-index: 20;
 }
 
 .bottom-board {
@@ -176,9 +195,8 @@ aside {
   left: 60px;
   position: absolute;
   top: 60px;
-  width: 100%;
+  width: 90%;
   overflow: hidden;
-  z-index: -8;
 }
 
 .book {
@@ -186,8 +204,11 @@ aside {
   color: white;
   font-size: 0.9rem;
   margin-bottom: 10px;
-  margin-top: 6px;
+  margin-top: 12px;
+  margin-left: 0.25%;
+  margin-right: 0.25%;
   transition: transform 0.4s ease;
+  z-index: 10;
 }
 
 .book-tilted {
@@ -205,41 +226,26 @@ aside {
 
 .book-green {
   background-image: linear-gradient(to left, $dark-green, $light-green, $dark-green);
-  border-left: 2px solid lighten($dark-green, 4%);
-  border-right: 2px solid darken($dark-green, 4%);
 }
 
 .book-yellow {
   background-image: linear-gradient(to left, $dark-yellow, $light-yellow, $dark-yellow);
-  border-left: 2px solid lighten($dark-yellow, 4%);
-  border-right: 2px solid darken($dark-yellow, 4%);
 }
 
 .book-orange {
   background-image: linear-gradient(to left, $dark-orange, $light-orange, $dark-orange);
-  border-left: 2px solid lighten($dark-orange, 4%);
-  border-right: 2px solid darken($dark-orange, 4%);
 }
 
 .book-red {
   background-image: linear-gradient(to left, $dark-red, $light-red, $dark-red);
-  border-left: 2px solid lighten($dark-red, 4%);
-  border-right: 2px solid darken($dark-red, 4%);
-  color: white;
 }
 
 .book-brown {
   background-image: linear-gradient(to left, $dark-brown, $light-brown, $dark-brown);
-  border-left: 2px solid lighten($dark-brown, 4%);
-  border-right: 2px solid darken($dark-brown, 4%);
-  color: white;
 }
 
 .book-burgundy {
   background-image: linear-gradient(to left, $dark-burgundy, $light-burgundy, $dark-burgundy);
-  border-left: 2px solid lighten($dark-burgundy, 4%);
-  border-right: 2px solid darken($dark-burgundy, 4%);
-  color: white;
 }
 
 .book-size-1 {
@@ -247,12 +253,18 @@ aside {
   width: 40px;
 }
 
+.book-size-2 {
+  height: 150px;
+  width: 40px;
+}
+
 .book h2 {
-  padding: 0;
+  color: white;
   font-size: 1rem;
+  margin-top: 16px;
+  margin-right: 18px;
+  padding: 0;
   transform-origin: 0% 0%;
   transform: rotate(0.25turn) translateY(-35px);
   width: 170px;
-  margin-top: 16px;
-  margin-right: 18px;
 }
