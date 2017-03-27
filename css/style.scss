@@ -18,7 +18,7 @@ p {
 
 header {
   align-items: center;
-  background-color: $red;
+  background-color: $dark-red;
   display: flex;
   height: 140px;
   justify-content: space-between;
@@ -102,13 +102,14 @@ aside {
   font-weight: bold;
 }
 
-.main-content {
+.bookcase {
   // border: 8px solid $dark-brown;
   // box-sizing: border-box;
   background-color: $pink;
   display: inline-block;
   float: right;
   height: 700px;
+  overflow: hidden;
   position: relative;
   width: 80%;
   z-index: -10;
@@ -161,4 +162,97 @@ aside {
   position: absolute;
   -webkit-clip-path: polygon(5.3% 15%, 94.7% 15%, 100% 100%, 0% 100%);
   width: 100%;
+}
+
+.bookshelves {
+  background-image: linear-gradient(
+  $medium-brown 32%,
+  $dark-brown 180px,
+  $medium-brown 205px,
+  $light-brown 50px,
+  $light-brown 100px);
+  background-size: 20px 230px;
+  height: 100%;
+  left: 60px;
+  position: absolute;
+  top: 60px;
+  width: 100%;
+  overflow: hidden;
+  z-index: -8;
+}
+
+.book {
+  float: left;
+  color: white;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  margin-top: 6px;
+  transition: transform 0.4s ease;
+}
+
+.book-tilted {
+  float: left;
+  width: 74px;
+}
+
+.book-tilted > .book {
+  transform: translateY(-3px) translateX(15px) rotate(9deg) ;
+}
+
+.book:hover {
+  transform: scale(1.05);
+}
+
+.book-green {
+  background-image: linear-gradient(to left, $dark-green, $light-green, $dark-green);
+  border-left: 2px solid lighten($dark-green, 4%);
+  border-right: 2px solid darken($dark-green, 4%);
+}
+
+.book-yellow {
+  background-image: linear-gradient(to left, $dark-yellow, $light-yellow, $dark-yellow);
+  border-left: 2px solid lighten($dark-yellow, 4%);
+  border-right: 2px solid darken($dark-yellow, 4%);
+}
+
+.book-orange {
+  background-image: linear-gradient(to left, $dark-orange, $light-orange, $dark-orange);
+  border-left: 2px solid lighten($dark-orange, 4%);
+  border-right: 2px solid darken($dark-orange, 4%);
+}
+
+.book-red {
+  background-image: linear-gradient(to left, $dark-red, $light-red, $dark-red);
+  border-left: 2px solid lighten($dark-red, 4%);
+  border-right: 2px solid darken($dark-red, 4%);
+  color: white;
+}
+
+.book-brown {
+  background-image: linear-gradient(to left, $dark-brown, $light-brown, $dark-brown);
+  border-left: 2px solid lighten($dark-brown, 4%);
+  border-right: 2px solid darken($dark-brown, 4%);
+  color: white;
+}
+
+.book-burgundy {
+  background-image: linear-gradient(to left, $dark-burgundy, $light-burgundy, $dark-burgundy);
+  border-left: 2px solid lighten($dark-burgundy, 4%);
+  border-right: 2px solid darken($dark-burgundy, 4%);
+  color: white;
+}
+
+.book-size-1 {
+  height: 200px;
+  width: 40px;
+}
+
+.book h2 {
+  padding: 0;
+  font-size: 1rem;
+  transform-origin: 0% 0%;
+  transform: rotate(0.25turn) translateY(-35px);
+  width: 170px;
+  margin-top: 16px;
+  margin-right: 18px;
 }
