@@ -130,7 +130,7 @@ aside {
   overflow: hidden;
   position: relative;
   width: 80%;
-  z-index: -10;
+  // z-index: -10;
 }
 
 .left-board {
@@ -196,7 +196,7 @@ aside {
   position: absolute;
   top: 60px;
   width: 90%;
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 .book {
@@ -222,6 +222,7 @@ aside {
 
 .book:hover {
   transform: scale(1.05);
+  cursor: pointer;
 }
 
 .book-green {
@@ -260,11 +261,88 @@ aside {
 
 .book h2 {
   color: white;
-  font-size: 1rem;
+  font-size: 0.9rem;
   margin-top: 16px;
   margin-right: 18px;
   padding: 0;
   transform-origin: 0% 0%;
   transform: rotate(0.25turn) translateY(-35px);
   width: 170px;
+}
+
+.book-yellow h2, .book-orange h2 {
+  color: black;
+}
+
+.remodal {
+  color: white;
+  height: 500px;
+  overflow: hidden;
+  width: 1300px;
+
+  img {
+    display: inline-block;
+    float: left;
+    height: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40%;
+  }
+
+  article {
+    display: inline-block;
+    float: right;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+
+    h1 {
+      font-size: 1.25rem;
+      font-weight: bold;
+      letter-spacing: 1.25px;
+      margin-bottom: 6px;
+      text-align: left;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-size: 1.15rem;
+      font-weight: lighter;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    p {
+      font-size: 0.9rem;
+      font-weight: normal;
+      text-align: left;
+    }
+  }
+}
+
+.remodal-green {
+  background-color: $dark-green;
+}
+
+.remodal-brown {
+  background-color: $light-brown;
+}
+
+.remodal-yellow {
+  background-color: $dark-yellow;
+  color: black;
+}
+
+.remodal-orange {
+  background-color: $dark-orange;
+}
+
+.remodal-red {
+  background-color: $dark-red;
+}
+
+.remodal-burgundy {
+  background-color: $dark-burgundy;
 }

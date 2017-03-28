@@ -96,8 +96,7 @@ aside {
   height: 700px;
   overflow: hidden;
   position: relative;
-  width: 80%;
-  z-index: -10; }
+  width: 80%; }
 
 .left-board {
   background-image: linear-gradient(to right, #B8967F, #946441);
@@ -152,8 +151,7 @@ aside {
   left: 60px;
   position: absolute;
   top: 60px;
-  width: 90%;
-  overflow: hidden; }
+  width: 90%; }
 
 .book {
   float: left;
@@ -174,7 +172,8 @@ aside {
   transform: translateY(-3px) translateX(15px) rotate(9deg); }
 
 .book:hover {
-  transform: scale(1.05); }
+  transform: scale(1.05);
+  cursor: pointer; }
 
 .book-green {
   background-image: linear-gradient(to left, #588C7E, #95B1A8, #588C7E); }
@@ -204,12 +203,71 @@ aside {
 
 .book h2 {
   color: white;
-  font-size: 1rem;
+  font-size: 0.9rem;
   margin-top: 16px;
   margin-right: 18px;
   padding: 0;
   transform-origin: 0% 0%;
   transform: rotate(0.25turn) translateY(-35px);
   width: 170px; }
+
+.book-yellow h2, .book-orange h2 {
+  color: black; }
+
+.remodal {
+  color: white;
+  height: 500px;
+  overflow: hidden;
+  width: 1300px; }
+  .remodal img {
+    display: inline-block;
+    float: left;
+    height: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40%; }
+  .remodal article {
+    display: inline-block;
+    float: right;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%; }
+    .remodal article h1 {
+      font-size: 1.25rem;
+      font-weight: bold;
+      letter-spacing: 1.25px;
+      margin-bottom: 6px;
+      text-align: left;
+      text-transform: uppercase; }
+    .remodal article h2 {
+      font-size: 1.15rem;
+      font-weight: lighter;
+      margin-bottom: 20px;
+      text-align: left; }
+    .remodal article p {
+      font-size: 0.9rem;
+      font-weight: normal;
+      text-align: left; }
+
+.remodal-green {
+  background-color: #588C7E; }
+
+.remodal-brown {
+  background-color: #B8967F; }
+
+.remodal-yellow {
+  background-color: #F2E394;
+  color: black; }
+
+.remodal-orange {
+  background-color: #F2AE72; }
+
+.remodal-red {
+  background-color: #D96459; }
+
+.remodal-burgundy {
+  background-color: #8C4646; }
 
 /*# sourceMappingURL=style.css.map */
