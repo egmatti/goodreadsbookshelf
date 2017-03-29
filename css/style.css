@@ -249,6 +249,7 @@ aside {
     .remodal article p {
       font-size: 0.9rem;
       font-weight: normal;
+      line-height: 20px;
       text-align: left; }
 
 .remodal-green {
