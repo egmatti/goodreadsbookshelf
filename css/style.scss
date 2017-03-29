@@ -128,10 +128,12 @@ aside {
 
 .side-nav {
   padding-top: 40px;
-  margin-left: 20%;
 
   li {
+    display: block;
     list-style-type: none;
+    margin: auto;
+    width: 150px;
 
     a {
       color: black;
@@ -293,7 +295,7 @@ aside {
 
 .book h2 {
   color: white;
-  font-size: 0.9rem;
+  font-size: 0.96rem;
   margin-top: 16px;
   margin-right: 18px;
   padding: 0;
@@ -379,5 +381,42 @@ aside {
 .remodal-burgundy {
   background-color: $dark-burgundy;
 }
+
+footer {
+  display: none;
+}
+
+#footer-styling {
+  align-items: center;
+  background: $pink;
+  display: flex;
+  height: 140px;
+  justify-content: space-around;
+  width: 100%;
+
+  a {
+    color: black;
+    text-decoration: none;
+
+    div {
+
+      img {
+        display: block;
+        height: 90px;
+        margin-bottom: 10px;
+        text-align: center;
+        width: auto;
+      }
+
+      span {
+        display: block;
+        font-size: 1.2rem;
+        height: 20px;
+        text-align: center;
+      }
+    }
+  }
+}
+
 
 @import "partials/media-queries";

@@ -7,10 +7,26 @@
 #hamburger-menu {
   display: inline-block;
 }
-
 }
 
 
 @media (max-width: 768px) {
+
+aside {
+  display: none;
+}
+
+.bookcase {
+  float: none;
+  width: 100%;
+}
+
+input {
+  display: none;
+}
+
+footer {
+  display: block;
+}
 
 }

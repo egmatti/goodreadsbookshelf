@@ -96,10 +96,12 @@ aside {
   width: 20%; }
 
 .side-nav {
-  padding-top: 40px;
-  margin-left: 20%; }
+  padding-top: 40px; }
   .side-nav li {
-    list-style-type: none; }
+    display: block;
+    list-style-type: none;
+    margin: auto;
+    width: 150px; }
     .side-nav li a {
       color: black;
       font-size: 1.1rem;
@@ -227,7 +229,7 @@ aside {
 
 .book h2 {
   color: white;
-  font-size: 0.9rem;
+  font-size: 0.96rem;
   margin-top: 16px;
   margin-right: 18px;
   padding: 0;
@@ -295,11 +297,49 @@ aside {
 .remodal-burgundy {
   background-color: #8C4646; }
 
+footer {
+  display: none; }
+
+#footer-styling {
+  align-items: center;
+  background: #DEC6BD;
+  display: flex;
+  height: 140px;
+  justify-content: space-around;
+  width: 100%; }
+  #footer-styling a {
+    color: black;
+    text-decoration: none; }
+    #footer-styling a div img {
+      display: block;
+      height: 90px;
+      margin-bottom: 10px;
+      text-align: center;
+      width: auto; }
+    #footer-styling a div span {
+      display: block;
+      font-size: 1.2rem;
+      height: 20px;
+      text-align: center; }
+
 @media (max-width: 1024px) {
   #main-nav ul {
     display: none; }
 
   #hamburger-menu {
     display: inline-block; } }
+@media (max-width: 768px) {
+  aside {
+    display: none; }
+
+  .bookcase {
+    float: none;
+    width: 100%; }
+
+  input {
+    display: none; }
+
+  footer {
+    display: block; } }
 
 /*# sourceMappingURL=style.css.map */
