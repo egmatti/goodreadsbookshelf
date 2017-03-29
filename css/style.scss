@@ -64,13 +64,11 @@ input {
 #main-nav {
   align-items: center;
   display: flex;
-  float: right;
   margin-right: 3%;
 
 
   li {
     display: inline-block;
-    float: right;
     padding: 0px 20px;
 
     a {
@@ -83,6 +81,40 @@ input {
 
     a:hover {
       border-bottom: 2px solid white;
+    }
+  }
+}
+
+#hamburger-menu {
+  display: none;
+  height: auto;
+  margin-right: 55px;
+  width: 55px;
+}
+
+#hamburger-menu-nav {
+  display: none;
+  position: absolute;
+  right: 0%;
+  z-index: 40;
+
+  li {
+    list-style-type: none;
+
+    a {
+      color: black;
+      background-color: $pink;
+      display: block;
+      font-size: 1.15rem;
+      font-style: bold;
+      padding: 20px 70px;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    a:hover {
+      background-color: $dark-red;
+      color: white;
     }
   }
 }
@@ -308,7 +340,7 @@ aside {
     }
 
     h2 {
-      font-size: 1.15rem;
+      font-size: 1.2rem;
       font-weight: lighter;
       margin-bottom: 20px;
       text-align: left;
@@ -347,3 +379,5 @@ aside {
 .remodal-burgundy {
   background-color: $dark-burgundy;
 }
+
+@import "partials/media-queries";

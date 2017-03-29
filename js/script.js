@@ -1,3 +1,8 @@
+$("#hamburger-menu").click(function(){
+    $("#hamburger-menu-nav").toggle();
+});
+
+
 // $(function () {
 //   var source = $("#book-example").html();
 //   var template = Handlebars.compile(source);
